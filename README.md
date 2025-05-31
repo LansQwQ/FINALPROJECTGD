@@ -1,6 +1,6 @@
 I Need A Clue
 --------
-I Need A clue is a A short visual novel game about a detective, players will guide the detective named Anita Clues through solving puzzles while traversing through the streets of the urban city. Each challenge helps uncover a mystery while keeping the story engaging. Make the right choices to progress through the game.
+I Need A clue is a A short visual novel game about a detective, players will guide the detective named Anita Clues through solving puzzles while traversing through the streets of the Urban City in 1960's. Each challenge helps uncover a mystery while keeping the story engaging. Make the right choices to progress through the game.
 
 Meet Anita Clue – The Detective with a Knack for the Unusual
 
