@@ -1,0 +1,1655 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>AnitaClue_MafiaLairUpdate</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>mtvvz9ha08pl</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects>
+        <effect author="Scirra" id="lighten">Lighten</effect>
+        <effect author="Scirra" id="multiply">Multiply</effect>
+    </used-effects>
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1800</width>
+        <height>1080</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="anitaofficewall" sid="242303203730354">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Shaine\Downloads\Anita_Wall1.png" />
+        </object-type>
+        <object-type name="phone" sid="513834090583983">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="done" sid="605060959357381" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="LineOfSight" sid="357290562036987">
+                    <behavior id="LOS" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="998260865555680" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\ASSETS FROM FRITZ-20250512T075040Z-001 2\ASSETS FROM FRITZ\Telephone.png">
+                        <collision-poly>
+                            <point x="0.171875" y="0.171875" />
+                            <point x="0.5" y="0.107031" />
+                            <point x="0.845312" y="0.154687" />
+                            <point x="0.858594" y="0.5" />
+                            <point x="0.802344" y="0.802344" />
+                            <point x="0.5" y="0.917969" />
+                            <point x="0.192188" y="0.807813" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\Telephone_Outline.png">
+                        <collision-poly>
+                            <point x="0.185937" y="0.185937" />
+                            <point x="0.5" y="0.128906" />
+                            <point x="0.785156" y="0.214844" />
+                            <point x="0.928125" y="0.5" />
+                            <point x="0.846875" y="0.846875" />
+                            <point x="0.5" y="0.907031" />
+                            <point x="0.145313" y="0.854688" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="newspapers" sid="492759964713361">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="done" sid="194583278526753" type="boolean" />
+                <instance-variable name="clickcount" sid="358149989772911" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="LineOfSight" sid="812300625165750">
+                    <behavior id="LOS" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="237243509937179" speed="5">
+                    <frame duration="1" hotspotX="0.497436" hotspotY="0.492021" original-source="C:\Users\Shaine\Downloads\modified assets\newspaper.png" />
+                    <frame duration="1" hotspotX="0.497436" hotspotY="0.492021" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="910471387960157">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Shaine\Downloads\floors-20250527T064311Z-1-001\floors\AnitaFloor_Floor.png" />
+        </object-type>
+        <object-type name="anita" sid="503804927605641">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="dir" sid="940094774613935" type="number" />
+                <instance-variable name="step_timer" sid="505815635945753" type="number" />
+                <instance-variable name="speed" sid="968784261285227" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="8Direction" sid="939308056788260">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="184247638019982">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="front" pingpong="0" repeatcount="1" repeatto="0" sid="897641847949131" speed="5">
+                    <frame duration="1" hotspotX="0.497696" hotspotY="0.517544" original-source="C:\Users\Jana\OneDrive\Pictures\csp files\INTROGD FINALS\001 ANITA\000 MOVEMENTS\anita front.png">
+                        <collision-poly>
+                            <point x="0.178188" y="0.133933" />
+                            <point x="0.517665" y="0.00877196" />
+                            <point x="0.84639" y="0.143548" />
+                            <point x="1" y="0.878001" />
+                            <point x="0.58897" y="0.971491" />
+                            <point x="0.402136" y="0.962719" />
+                            <point x="0.030722" y="0.872987" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="left" pingpong="0" repeatcount="1" repeatto="0" sid="264137767299122" speed="5">
+                    <frame duration="1" hotspotX="0.461538" hotspotY="0.49177" original-source="C:\Users\Jana\OneDrive\Pictures\csp files\INTROGD FINALS\001 ANITA\000 MOVEMENTS\LEFT anita chibi walk LINED 2.png">
+                        <collision-poly>
+                            <point x="0.0769231" y="0.140947" />
+                            <point x="0.461538" y="0.0154321" />
+                            <point x="0.851399" y="0.194444" />
+                            <point x="0.991259" y="0.854938" />
+                            <point x="0.825175" y="0.987654" />
+                            <point x="0.0227273" y="0.978395" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="right" pingpong="0" repeatcount="1" repeatto="0" sid="525947725697620" speed="5">
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.496432" original-source="C:\Users\Jana\OneDrive\Pictures\csp files\INTROGD FINALS\001 ANITA\000 MOVEMENTS\RIGHT anita chibi walk LINED.png">
+                        <collision-poly>
+                            <point x="0.148601" y="0.218145" />
+                            <point x="0.538462" y="0.011213" />
+                            <point x="0.916084" y="0.153925" />
+                            <point x="0.980769" y="0.979613" />
+                            <point x="0.538462" y="0.957187" />
+                            <point x="0.00874126" y="0.856269" />
+                            <point x="0.291958" y="0.496432" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="back" pingpong="0" repeatcount="1" repeatto="0" sid="140645614417512" speed="5">
+                    <frame duration="1" hotspotX="0.472175" hotspotY="0.489297" original-source="C:\Users\Jana\OneDrive\Pictures\csp files\INTROGD FINALS\001 ANITA\000 MOVEMENTS\BACK anita chibi walk LINED 2 MOVE.png">
+                        <collision-poly>
+                            <point x="0.134907" y="0.234455" />
+                            <point x="0.472175" y="0.0030581" />
+                            <point x="0.883642" y="0.189602" />
+                            <point x="0.74199" y="0.489297" />
+                            <point x="0.996627" y="0.857288" />
+                            <point x="0.472175" y="0.998981" />
+                            <point x="0.010118" y="0.819572" />
+                            <point x="0.158516" y="0.489297" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.459416" hotspotY="0.480533" original-source="C:\Users\Jana\OneDrive\Pictures\csp files\INTROGD FINALS\001 ANITA\000 MOVEMENTS\BACK anita chibi walk LINED 2.png">
+                        <collision-poly>
+                            <point x="0.134907" y="0.234455" />
+                            <point x="0.472175" y="0.0030581" />
+                            <point x="0.883642" y="0.189602" />
+                            <point x="0.74199" y="0.489297" />
+                            <point x="0.996627" y="0.857288" />
+                            <point x="0.472175" y="0.998981" />
+                            <point x="0.010118" y="0.819572" />
+                            <point x="0.158516" y="0.489297" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="anitaofficewall2" sid="962361104876349">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Shaine\Downloads\Anita_Wall1.png" />
+        </object-type>
+        <object-type name="anitaofficewall3" sid="846637140667366">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="350878648156154">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Shaine\Downloads\walls-20250527T043137Z-1-001\walls\AltAnita_Wall.png" />
+        </object-type>
+        <object-type name="anitaofficewall4" sid="834964470096095">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="523108764455854">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Shaine\Downloads\walls-20250527T043137Z-1-001\walls\AltAnita_Wall.png" />
+        </object-type>
+        <object-type name="anitaofficewall5" sid="267666905398718">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="814621277718431">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Shaine\Downloads\walls-20250527T043137Z-1-001\walls\AltAnita_Wall.png" />
+        </object-type>
+        <object-type name="anitaofficeboard" sid="844815748731349">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Shaine\Downloads\walls-20250527T043137Z-1-001\walls\AltAnita_Wall2.png" />
+        </object-type>
+        <object-type name="anitadooroffice" sid="140170932497215">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="open" sid="979879741045200" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="openClose" pingpong="0" repeatcount="1" repeatto="0" sid="468538347118308" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\walls-20250527T043137Z-1-001\walls\Anita_DoorWall2.png">
+                        <collision-poly>
+                            <point x="0.578125" y="0.546875" />
+                            <point x="0.828124" y="0.553125" />
+                            <point x="0.806249" y="1" />
+                            <point x="0.578125" y="0.996876" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\walls-20250527T043137Z-1-001\walls\AltAnita_DoorWall1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="table" sid="762225873282710">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LineOfSight" sid="448062230927455">
+                    <behavior id="LOS" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="134295030373684" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.486931" original-source="C:\Users\Shaine\Downloads\OfficeTable.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="file" sid="235283564757621">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="496403907165496" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\modified assets\file.png">
+                        <collision-poly>
+                            <point x="0.171875" y="0.171875" />
+                            <point x="0.5" y="0.107031" />
+                            <point x="0.845312" y="0.154687" />
+                            <point x="0.858594" y="0.5" />
+                            <point x="0.802344" y="0.802344" />
+                            <point x="0.5" y="0.917969" />
+                            <point x="0.192188" y="0.807813" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="602612212045344">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type global="1" name="dialouge1_array" sid="338415898390028">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="Mouse" sid="464613011802790">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="dialougeBox" sid="140946087959262">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="ishowingchoices" sid="609773980383173" type="boolean" />
+                <instance-variable name="clickcount" sid="941650114425905" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="596022820263652" speed="5">
+                    <frame duration="1" hotspotX="0.553164" hotspotY="-0.293333" original-source="C:\Users\Shaine\Downloads\DialogueBox1.png">
+                        <collision-poly>
+                            <point x="0.388128" y="0.152" />
+                            <point x="0.7182" y="0.152" />
+                            <point x="0.998695" y="0.408" />
+                            <point x="0.553164" y="0.994667" />
+                            <point x="0.0313112" y="0.72" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="dialogue1textbox" sid="924096739110912">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="invisiblewall" sid="827121300348726">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="588362826624158">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="641249734973493" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mansiontiles" sid="600886564163109">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Shaine\Downloads\2.png" />
+        </object-type>
+        <object-type name="mansionwindows" sid="784700619410851">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Shaine\Downloads\walls-20250527T043137Z-1-001\walls\DoubleWindow_Mansion_Wall.png" />
+        </object-type>
+        <object-type name="mansionwall" sid="538545032947915">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="784857942317204">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="228178531158472" speed="5">
+                    <frame duration="1" hotspotX="0.500852" hotspotY="0.498498" original-source="C:\Users\Shaine\Downloads\walls-20250527T043137Z-1-001\walls\Door_Mansion_Wall.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="couch" sid="608790496895212">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="392651558712727" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\items-20250528T150059Z-1-001\items\RichCouch_vers1.png">
+                        <collision-poly>
+                            <point x="0.0917969" y="0.154098" />
+                            <point x="0.5" y="0.108197" />
+                            <point x="0.908203" y="0.154098" />
+                            <point x="0.975586" y="0.5" />
+                            <point x="0.94043" y="0.9" />
+                            <point x="0.5" y="0.878689" />
+                            <point x="0.0595703" y="0.9" />
+                            <point x="0.0244141" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="chimney" sid="385382805193288">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="235328219664514" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\items-20250528T150059Z-1-001\items\Chimmey_Fire1.png">
+                        <collision-poly>
+                            <point x="0.146875" y="0.146875" />
+                            <point x="0.5" y="0" />
+                            <point x="0.853125" y="0.146875" />
+                            <point x="0.978125" y="0.5" />
+                            <point x="0.9625" y="0.9625" />
+                            <point x="0.0375" y="0.9625" />
+                            <point x="0.021875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\items-20250528T150059Z-1-001\items\Chimmey_Fire2.png">
+                        <collision-poly>
+                            <point x="0.146875" y="0.146875" />
+                            <point x="0.5" y="0" />
+                            <point x="0.853125" y="0.146875" />
+                            <point x="0.978125" y="0.5" />
+                            <point x="0.9625" y="0.9625" />
+                            <point x="0.0375" y="0.9625" />
+                            <point x="0.021875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="portrait" sid="566489171753859">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="990179510104538" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\items-20250528T150059Z-1-001\items\PaintingPortrait.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.046875" />
+                            <point x="0.5" y="0.0644531" />
+                            <point x="0.9375" y="0.046875" />
+                            <point x="0.952474" y="0.5" />
+                            <point x="0.888672" y="0.916504" />
+                            <point x="0.111328" y="0.916504" />
+                            <point x="0.047526" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gramophone" sid="992050111840117">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LineOfSight" sid="235549631021748">
+                    <behavior id="LOS" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="383929952349862" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\items-20250528T150059Z-1-001\items\Gramophone.png">
+                        <collision-poly>
+                            <point x="0.161719" y="0.161719" />
+                            <point x="0.5" y="0.0898438" />
+                            <point x="0.609375" y="0.390625" />
+                            <point x="0.86875" y="0.86875" />
+                            <point x="0.5" y="0.942969" />
+                            <point x="0.28125" y="0.71875" />
+                            <point x="0.154687" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.508374" hotspotY="0.501958" original-source="C:\Users\Shaine\Downloads\Gramophone_Outline.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mansiondoor" sid="664804716081907">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="962379282500462" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\ClosedDoubleDoorsMansion.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="rug" sid="284894954950784">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="673900060934250" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\FurRug_vers1.png">
+                        <collision-poly>
+                            <point x="0.0878906" y="0.211268" />
+                            <point x="0.5" y="0.0833333" />
+                            <point x="0.90332" y="0.232394" />
+                            <point x="0.965332" y="0.5" />
+                            <point x="0.937988" y="0.850939" />
+                            <point x="0.0292969" y="0.929577" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="houseplant" sid="860017442477580">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="778859377412668" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\Houseplant_1.png">
+                        <collision-poly>
+                            <point x="0.212891" y="0.159668" />
+                            <point x="0.5" y="0.105469" />
+                            <point x="0.838542" y="0.121094" />
+                            <point x="0.848307" y="0.5" />
+                            <point x="0.758464" y="0.818848" />
+                            <point x="0.5" y="0.953125" />
+                            <point x="0.241536" y="0.818848" />
+                            <point x="0.484375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="housekeeper_npc" sid="486117206640011">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LineOfSight" sid="233841902612657">
+                    <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="776870543141699">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="252520811973128" speed="5">
+                    <frame duration="1" hotspotX="0.500557" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\NON HOSTILE npc MAID DEFAULT FRONT (1).png">
+                        <collision-poly>
+                            <point x="0.247492" y="0.20367" />
+                            <point x="0.499443" y="0.0568807" />
+                            <point x="0.70903" y="0.23945" />
+                            <point x="0.60981" y="0.5" />
+                            <point x="0.694537" y="0.748624" />
+                            <point x="0.499443" y="0.963303" />
+                            <point x="0.25641" y="0.788991" />
+                            <point x="0.318841" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500557" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\ENEMY npc MAID DEFAULT FRONT.png">
+                        <collision-poly>
+                            <point x="0.247492" y="0.20367" />
+                            <point x="0.499443" y="0.0568807" />
+                            <point x="0.70903" y="0.23945" />
+                            <point x="0.60981" y="0.5" />
+                            <point x="0.694537" y="0.748624" />
+                            <point x="0.499443" y="0.963303" />
+                            <point x="0.25641" y="0.788991" />
+                            <point x="0.318841" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button" sid="167066602691099">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Button2" sid="203728451880547">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="inventoryCase" sid="612303503304379">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="549579447837658">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="439762186770988" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\Inventory (not used).png">
+                        <collision-poly>
+                            <point x="0.153646" y="0.153646" />
+                            <point x="0.5" y="0.00911458" />
+                            <point x="0.847656" y="0.152344" />
+                            <point x="0.99349" y="0.5" />
+                            <point x="0.848958" y="0.848958" />
+                            <point x="0.5" y="0.99349" />
+                            <point x="0.152344" y="0.847656" />
+                            <point x="0.0104167" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\items-20250528T150059Z-1-001\items\Key3.png">
+                        <collision-poly>
+                            <point x="0.266406" y="0.266406" />
+                            <point x="0.5" y="0.104687" />
+                            <point x="0.532812" y="0.5" />
+                            <point x="0.675781" y="0.675781" />
+                            <point x="0.5" y="0.940625" />
+                            <point x="0.369531" y="0.630469" />
+                            <point x="0.367969" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500301" original-source="C:\Users\Shaine\Downloads\DiaryPage1.png">
+                        <collision-poly>
+                            <point x="0.202474" y="0.187011" />
+                            <point x="0.5" y="0.117859" />
+                            <point x="0.847005" y="0.141311" />
+                            <point x="0.854167" y="0.499699" />
+                            <point x="0.835938" y="0.848467" />
+                            <point x="0.5" y="0.874323" />
+                            <point x="0.209635" y="0.806374" />
+                            <point x="0.189453" y="0.499699" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="inventoryframes" sid="987678171619497">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="543566983890290" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\items-20250528T150059Z-1-001\items\Key3.png">
+                        <collision-poly>
+                            <point x="0.266406" y="0.266406" />
+                            <point x="0.5" y="0.104687" />
+                            <point x="0.532812" y="0.5" />
+                            <point x="0.675781" y="0.675781" />
+                            <point x="0.5" y="0.940625" />
+                            <point x="0.369531" y="0.630469" />
+                            <point x="0.367969" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\DiaryPage1.png">
+                        <collision-poly>
+                            <point x="0.202474" y="0.187011" />
+                            <point x="0.5" y="0.117859" />
+                            <point x="0.847005" y="0.141311" />
+                            <point x="0.854167" y="0.499699" />
+                            <point x="0.835938" y="0.848467" />
+                            <point x="0.5" y="0.874323" />
+                            <point x="0.209635" y="0.806374" />
+                            <point x="0.189453" y="0.499699" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\DiaryPage2.png">
+                        <collision-poly>
+                            <point x="0.191406" y="0.176789" />
+                            <point x="0.5" y="0.0980156" />
+                            <point x="0.824219" y="0.162357" />
+                            <point x="0.85026" y="0.499699" />
+                            <point x="0.807943" y="0.82261" />
+                            <point x="0.5" y="0.847264" />
+                            <point x="0.19987" y="0.815394" />
+                            <point x="0.218099" y="0.499699" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\DiaryPage3.png">
+                        <collision-poly>
+                            <point x="0.177083" y="0.16356" />
+                            <point x="0.5" y="0.0649429" />
+                            <point x="0.875651" y="0.114853" />
+                            <point x="0.794271" y="0.809982" />
+                            <point x="0.5" y="0.85448" />
+                            <point x="0.161458" y="0.850872" />
+                            <point x="0.13737" y="0.499699" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="inventoryframes2" sid="781654418998668">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="112306196164733" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\items-20250528T150059Z-1-001\items\Key3.png">
+                        <collision-poly>
+                            <point x="0.266406" y="0.266406" />
+                            <point x="0.5" y="0.104687" />
+                            <point x="0.532812" y="0.5" />
+                            <point x="0.675781" y="0.675781" />
+                            <point x="0.5" y="0.940625" />
+                            <point x="0.369531" y="0.630469" />
+                            <point x="0.367969" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\DiaryPage1.png">
+                        <collision-poly>
+                            <point x="0.202474" y="0.187011" />
+                            <point x="0.5" y="0.117859" />
+                            <point x="0.847005" y="0.141311" />
+                            <point x="0.854167" y="0.499699" />
+                            <point x="0.835938" y="0.848467" />
+                            <point x="0.5" y="0.874323" />
+                            <point x="0.209635" y="0.806374" />
+                            <point x="0.189453" y="0.499699" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\DiaryPage2.png">
+                        <collision-poly>
+                            <point x="0.191406" y="0.176789" />
+                            <point x="0.5" y="0.0980156" />
+                            <point x="0.824219" y="0.162357" />
+                            <point x="0.85026" y="0.499699" />
+                            <point x="0.807943" y="0.82261" />
+                            <point x="0.5" y="0.847264" />
+                            <point x="0.19987" y="0.815394" />
+                            <point x="0.218099" y="0.499699" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\DiaryPage3.png">
+                        <collision-poly>
+                            <point x="0.177083" y="0.16356" />
+                            <point x="0.5" y="0.0649429" />
+                            <point x="0.875651" y="0.114853" />
+                            <point x="0.794271" y="0.809982" />
+                            <point x="0.5" y="0.85448" />
+                            <point x="0.161458" y="0.850872" />
+                            <point x="0.13737" y="0.499699" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="inventoryframes3" sid="816201250207038">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="261977050132324" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\items-20250528T150059Z-1-001\items\Key3.png">
+                        <collision-poly>
+                            <point x="0.266406" y="0.266406" />
+                            <point x="0.5" y="0.104687" />
+                            <point x="0.532812" y="0.5" />
+                            <point x="0.675781" y="0.675781" />
+                            <point x="0.5" y="0.940625" />
+                            <point x="0.369531" y="0.630469" />
+                            <point x="0.367969" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500301" original-source="C:\Users\Shaine\Downloads\DiaryPage1.png">
+                        <collision-poly>
+                            <point x="0.202474" y="0.187011" />
+                            <point x="0.5" y="0.117859" />
+                            <point x="0.847005" y="0.141311" />
+                            <point x="0.854167" y="0.499699" />
+                            <point x="0.835938" y="0.848467" />
+                            <point x="0.5" y="0.874323" />
+                            <point x="0.209635" y="0.806374" />
+                            <point x="0.189453" y="0.499699" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500301" original-source="C:\Users\Shaine\Downloads\DiaryPage2.png">
+                        <collision-poly>
+                            <point x="0.191406" y="0.176789" />
+                            <point x="0.5" y="0.0980156" />
+                            <point x="0.824219" y="0.162357" />
+                            <point x="0.85026" y="0.499699" />
+                            <point x="0.807943" y="0.82261" />
+                            <point x="0.5" y="0.847264" />
+                            <point x="0.19987" y="0.815394" />
+                            <point x="0.218099" y="0.499699" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500301" original-source="C:\Users\Shaine\Downloads\DiaryPage3.png">
+                        <collision-poly>
+                            <point x="0.177083" y="0.16356" />
+                            <point x="0.5" y="0.0649429" />
+                            <point x="0.875651" y="0.114853" />
+                            <point x="0.794271" y="0.809982" />
+                            <point x="0.5" y="0.85448" />
+                            <point x="0.161458" y="0.850872" />
+                            <point x="0.13737" y="0.499699" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="blankwallmansion" sid="437255689813418">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Shaine\Downloads\MansionWallPlain1.png" />
+        </object-type>
+        <object-type name="table2" sid="567255397912668">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="357813768097141" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\items-20250528T150059Z-1-001\items\Shelf_closed.png">
+                        <collision-poly>
+                            <point x="0.135742" y="0.18099" />
+                            <point x="0.5" y="0.0852865" />
+                            <point x="0.864258" y="0.18099" />
+                            <point x="0.967773" y="0.5" />
+                            <point x="0.901855" y="0.869141" />
+                            <point x="0.5" y="0.792969" />
+                            <point x="0.0981445" y="0.869141" />
+                            <point x="0.0322266" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="leaveMarker" sid="583966748462481">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="236425541922077">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="963603439219460" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="leaveMarker2" sid="562865461496413">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="486595489895161">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="814559661756179" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lock" sid="611297315153679">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="879796186432615" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Shaine\Downloads\PadLock1_Locked.png">
+                        <collision-poly>
+                            <point x="0.413281" y="0.413281" />
+                            <point x="0.5" y="0.025" />
+                            <point x="0.8" y="0.2" />
+                            <point x="0.817187" y="0.5" />
+                            <point x="0.817187" y="0.817187" />
+                            <point x="0.5" y="0.8875" />
+                            <point x="0.182812" y="0.817187" />
+                            <point x="0.182812" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="staff" sid="530747244989754">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="152498531448815" speed="5">
+                    <frame duration="1" hotspotX="0.46832" hotspotY="1.3311" original-source="C:\Users\Shaine\Downloads\LinesForMusicWall1 2.png">
+                        <collision-poly>
+                            <point x="0.127451" y="0.0188679" />
+                            <point x="0.808824" y="0.0188679" />
+                            <point x="0.379902" y="0.990566" />
+                            <point x="0.556373" y="0.990566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gclef" sid="248711124654523">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="491132834448686" speed="5">
+                    <frame duration="1" hotspotX="0.0652174" hotspotY="0.357759" original-source="C:\Users\Shaine\Downloads\MusicalNotesTransparent1 2.png">
+                        <collision-poly>
+                            <point x="0.445652" y="0.196121" />
+                            <point x="0.0597826" y="0.523707" />
+                            <point x="0.684783" y="0.355603" />
+                            <point x="0.75" y="0.94181" />
+                            <point x="0.0597826" y="0.668103" />
+                            <point x="0.0652175" y="0.668103" />
+                            <point x="0.380435" y="0.355603" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="musicnotes" sid="960609086079616">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="721871989680617" speed="5">
+                    <frame duration="1" hotspotX="0.854962" hotspotY="0.548117" original-source="C:\Users\Shaine\Downloads\5.png">
+                        <collision-poly>
+                            <point x="0.496183" y="0.0460251" />
+                            <point x="0.854962" y="0.313808" />
+                            <point x="0.793893" y="0.276151" />
+                            <point x="0.984733" y="0.543933" />
+                            <point x="0.549618" y="0.682008" />
+                            <point x="0.854962" y="0.707113" />
+                            <point x="0.496183" y="0.543933" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="musicnotes2" sid="565223092581200">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="193741121021530" speed="5">
+                    <frame duration="1" hotspotX="0.975" hotspotY="0.568548" original-source="C:\Users\Shaine\Downloads\MusicalNotesTransparent1 3.png">
+                        <collision-poly>
+                            <point x="0.497404" y="0" />
+                            <point x="0.976374" y="0.152029" />
+                            <point x="0.894847" y="0.0849143" />
+                            <point x="1" y="0.562171" />
+                            <point x="0.56874" y="0.808256" />
+                            <point x="0.976374" y="0.853" />
+                            <point x="0.497404" y="0.562171" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="musicnotes3" sid="349733040985349">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="946582820745857" speed="5">
+                    <frame duration="1" hotspotX="1.5875" hotspotY="0.0681818" original-source="C:\Users\Shaine\Downloads\MusicalNotesTransparent1 4.png">
+                        <collision-poly>
+                            <point x="0.557824" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.0572268" />
+                            <point x="0.710782" y="0.451368" />
+                            <point x="1" y="0.523032" />
+                            <point x="0.557824" y="0.0572268" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="piano" sid="113484160246615">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LineOfSight" sid="149153165490484">
+                    <behavior id="LOS" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="129104491332478" speed="5">
+                    <frame duration="1" hotspotX="0.483909" hotspotY="0.481394" original-source="C:\Users\Shaine\Downloads\items-20250528T150059Z-1-001\items\Piano.png">
+                        <collision-poly>
+                            <point x="0.997616" y="0.0756054" />
+                            <point x="0.992849" y="0.88482" />
+                            <point x="0.483909" y="0.995865" />
+                            <point x="0.00357568" y="0.870644" />
+                            <point x="0.0166866" y="0.0986415" />
+                            <point x="0.483909" y="0.00236267" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="musicNoteClueSprite" sid="721759330970642">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="898652743620829" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.854962" hotspotY="0.548117" original-source="C:\Users\Shaine\Downloads\5.png">
+                        <collision-poly>
+                            <point x="0.496183" y="0.0460251" />
+                            <point x="0.854962" y="0.313808" />
+                            <point x="0.793893" y="0.276151" />
+                            <point x="0.984733" y="0.543933" />
+                            <point x="0.549618" y="0.682008" />
+                            <point x="0.854962" y="0.707113" />
+                            <point x="0.496183" y="0.543933" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505" hotspotY="0.483871" original-source="C:\Users\Shaine\Downloads\MusicalNotesTransparent1 3.png">
+                        <collision-poly>
+                            <point x="0.4" y="0.0483871" />
+                            <point x="0.5" y="0.0846775" />
+                            <point x="0.545" y="0.0967742" />
+                            <point x="0.985" y="0.483871" />
+                            <point x="0.69" y="0.987903" />
+                            <point x="0.5" y="0.165323" />
+                            <point x="0.955" y="0.471774" />
+                            <point x="0.26" y="0.483871" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.45" hotspotY="0.45" original-source="C:\Users\Shaine\Downloads\MusicalNotesTransparent1 4.png">
+                        <collision-poly>
+                            <point x="0.2825" y="0" />
+                            <point x="0.56875" y="0" />
+                            <point x="0.697563" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.56875" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="623667634473048">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="pressureplates" sid="911373751071774">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="334995370989116" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pressureplates2" sid="917406727875007">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="945583712101902" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pressureplates3" sid="134223296306049">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="623079224838454" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pressureplates4" sid="889806826552322">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="285174053391252" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="-0.5" hotspotY="0.012" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PoliceFloor_tb" sid="707305193578976">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\fritz\Downloads\PoliceFloor.png" />
+        </object-type>
+        <object-type name="Police1Wall_spr" sid="866974905907139">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="657682299581302">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="632284434865259" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fritz\Downloads\PoliceWall1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Police2Wall_spr" sid="440624859475935">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="433543497887335">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="936902513168821" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fritz\Downloads\PoliceWall2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PoliceDoor_spr" sid="769386682977096">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="685366895465747">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="392903166627080" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fritz\Downloads\CloseDoorPolice.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Open" pingpong="0" repeatcount="1" repeatto="0" sid="197666862733290" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fritz\Downloads\PoliceOfficeOpenDoor.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PoliceTable_spr" sid="965567729360645">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="558059363347089">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="692278216835762" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fritz\Downloads\PoliceTable.png">
+                        <collision-poly>
+                            <point x="0.0195313" y="0.552083" />
+                            <point x="0.169922" y="0.0911457" />
+                            <point x="0.828125" y="0.09375" />
+                            <point x="0.986328" y="0.544271" />
+                            <point x="0.957031" y="0.869792" />
+                            <point x="0.0429688" y="0.869792" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Police1Wall_spr2" sid="399577937907402">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="888694814143198">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="667436795213466" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fritz\Downloads\PoliceWall1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ConspiracyBoard_spr" sid="586344512822458">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="744813860106083" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fritz\Downloads\DetectiveBoard.png">
+                        <collision-poly>
+                            <point x="0.0302734" y="0.0532646" />
+                            <point x="0.96582" y="0.0601375" />
+                            <point x="0.955566" y="0.921821" />
+                            <point x="0.0444336" y="0.921821" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PoliceChair_spr" sid="168249251639544">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="159936576816279" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fritz\Downloads\PoliceChair.png">
+                        <collision-poly>
+                            <point x="0.218099" y="0.163574" />
+                            <point x="0.5" y="0.100098" />
+                            <point x="0.781901" y="0.163574" />
+                            <point x="0.807943" y="0.5" />
+                            <point x="0.878906" y="0.90918" />
+                            <point x="0.5" y="0.655762" />
+                            <point x="0.121094" y="0.90918" />
+                            <point x="0.192057" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AutospyBed_spr" sid="758862683303987">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="822429249611875">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="122009737094938" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0.396" />
+                            <point x="1" y="0.392" />
+                            <point x="1" y="0.896" />
+                            <point x="0" y="0.888" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PoliceFriendly_spr" sid="468840917793101">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LineOfSight" sid="532472100348231">
+                    <behavior id="LOS" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="875710001240017" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\fritz\Downloads\NON HOSTILE POLICE DEFAULT FRONT.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.225" />
+                            <point x="0.5" y="0.042" />
+                            <point x="0.715556" y="0.256" />
+                            <point x="0.624444" y="0.5" />
+                            <point x="0.743333" y="0.769" />
+                            <point x="0.5" y="0.983" />
+                            <point x="0.244444" y="0.78" />
+                            <point x="0.345556" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MafiaWall_tile" sid="624821710912947">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Users\Jana\Downloads\MafiaLairWall.png" />
+        </object-type>
+        <object-type name="MafiaLair_Floor" sid="520149722408971">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Users\Jana\Downloads\MafiaLairFloor.png" />
+        </object-type>
+        <object-type name="filter" sid="773821421995238">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Lighten">
+                    <effect id="lighten" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="891426437790140" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="filter2" sid="739273944310434">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Lighten">
+                    <effect id="lighten" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="973036774132122" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MafiaGoon_Sprite" sid="968235428635474">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LineOfSight" sid="244947000011624">
+                    <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="723273018358742">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="193017687649659">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="886442946671956">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="idle" pingpong="0" repeatcount="1" repeatto="0" sid="882287245853735" speed="5">
+                    <frame duration="1" hotspotX="0.492278" hotspotY="0.486911" original-source="C:\Users\Jana\OneDrive\Pictures\csp files\INTROGD FINALS\005NPC INTERACT\npc MAFIA GOON IDLE.png">
+                        <collision-poly>
+                            <point x="0.662162" y="0.486911" />
+                            <point x="0.714286" y="0.659686" />
+                            <point x="0.492278" y="0.995812" />
+                            <point x="0.057915" y="0.198953" />
+                            <point x="0.492278" y="0.0052356" />
+                            <point x="0.96332" y="0.179058" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="run" pingpong="0" repeatcount="1" repeatto="0" sid="267138092580404" speed="5">
+                    <frame duration="1" hotspotX="0.499278" hotspotY="0.495071" original-source="C:\Users\Jana\OneDrive\Pictures\csp files\INTROGD FINALS\005NPC INTERACT\npc MAFIA GOON RUN.png">
+                        <collision-poly>
+                            <point x="0.777778" y="0.618839" />
+                            <point x="0.500722" y="0.995619" />
+                            <point x="0.00577223" y="0.837897" />
+                            <point x="0.298701" y="0.226725" />
+                            <point x="0.500722" y="0.0175247" />
+                            <point x="0.952381" y="0.139102" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.457721" hotspotY="0.500539" original-source="C:\Users\Jana\OneDrive\Pictures\csp files\INTROGD FINALS\005NPC INTERACT\npc MAFIA GOON RUN move.png">
+                        <collision-poly>
+                            <point x="0.777778" y="0.618839" />
+                            <point x="0.500722" y="0.995619" />
+                            <point x="0.00577223" y="0.837897" />
+                            <point x="0.298701" y="0.226725" />
+                            <point x="0.500722" y="0.0175247" />
+                            <point x="0.952381" y="0.139102" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="solidwall_spr" sid="967592211678824">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="801638120067712">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="596061607089179" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="filter1" sid="312843110258794">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Lighten">
+                    <effect id="lighten" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="779645522857875" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="wallCrash" sid="113983387270871">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="971524133664318">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="504857427764790" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MafiaLair_Floor2" sid="653333304272879">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Users\Jana\Downloads\MafiaLairFloor.png" />
+        </object-type>
+        <object-type name="Tallshelf_Beaker" sid="839091928052177">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="366804117282035">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="199490687493438" speed="5">
+                    <frame duration="1" hotspotX="0.445471" hotspotY="0.486744" original-source="D:\Users\Jana\Downloads\TallShelf_Open_LabEquip.png">
+                        <collision-poly>
+                            <point x="0" y="0.0445387" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.855779" />
+                            <point x="0" y="0.910923" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tallshelf_flowers" sid="767929068736763">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="422206599866874">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="249097224146572" speed="5">
+                    <frame duration="1" hotspotX="0.445471" hotspotY="0.486744" original-source="D:\Users\Jana\Downloads\TallShelf_Open_Flowers.png">
+                        <collision-poly>
+                            <point x="0.00369686" y="0.0514316" />
+                            <point x="0.998152" y="0.0339343" />
+                            <point x="1" y="0.80806" />
+                            <point x="0.00184843" y="0.876988" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tallshelf_empty" sid="534102659396860">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="475541021228099">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="195514423545856" speed="5">
+                    <frame duration="1" hotspotX="0.367837" hotspotY="0.472428" original-source="D:\Users\Jana\Downloads\TallShelf_Open_Empty.png">
+                        <collision-poly>
+                            <point x="0" y="0.0509014" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="0.932964" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tallshelf_empty2" sid="994166939284087">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="340421956838216">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="518021481050503" speed="5">
+                    <frame duration="1" hotspotX="0.367837" hotspotY="0.472428" original-source="D:\Users\Jana\Downloads\TallShelf_Open_Empty.png">
+                        <collision-poly>
+                            <point x="0" y="0.0509014" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="0.932964" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tallshelf_Beaker2" sid="949757174520395">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="652580695273703">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="968726087340682" speed="5">
+                    <frame duration="1" hotspotX="0.445471" hotspotY="0.486744" original-source="D:\Users\Jana\Downloads\TallShelf_Open_LabEquip.png">
+                        <collision-poly>
+                            <point x="0" y="0.0445387" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="0.910923" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tallshelf_closed" sid="225122412596589">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="437553419345212">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="967506871412134" speed="5">
+                    <frame duration="1" hotspotX="0.294304" hotspotY="0.46957" original-source="D:\Users\Jana\Downloads\TallShelf_Closed.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tallshelf_empty3" sid="519954412001132">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="919539127701037">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="717251598978773" speed="5">
+                    <frame duration="1" hotspotX="0.257856" hotspotY="0.457052" original-source="D:\Users\Jana\Downloads\TallShelf_Open_Flowers.png">
+                        <collision-poly>
+                            <point x="0" y="0.0466596" />
+                            <point x="0.892791" y="0.0466596" />
+                            <point x="1" y="0.985154" />
+                            <point x="0" y="0.922964" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tallshelf_Beaker3" sid="671626700376327">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="231233356534200">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="826091602369369" speed="5">
+                    <frame duration="1" hotspotX="0.419831" hotspotY="0.486874" original-source="D:\Users\Jana\Downloads\TallShelf_Closed.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tableA" sid="619030444768077">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="930556098571242" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.529412" original-source="D:\Users\Jana\Downloads\Table_vers3.png">
+                        <collision-poly>
+                            <point x="0.832326" y="0" />
+                            <point x="0.97432" y="0.957747" />
+                            <point x="0.0256798" y="0.957747" />
+                            <point x="0.141994" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="door" sid="765264324729547">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LineOfSight" sid="771461511937776">
+                    <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="164948682345741">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="956685318425571" speed="5">
+                    <frame duration="1" hotspotX="0.476309" hotspotY="0.488263" original-source="D:\Users\Jana\Downloads\MafiaLairClosedDoor.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jana\OneDrive\Pictures\csp files\INTROGD FINALS\MISC ASSETS\MafiaLairClosedDoorline.png">
+                        <collision-poly>
+                            <point x="0.00242718" y="0.0015528" />
+                            <point x="0.997573" y="0.0015528" />
+                            <point x="0.997573" y="0.998447" />
+                            <point x="0.00242718" y="0.998447" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="EnemyPolice_spr" sid="239687752483435">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LineOfSight" sid="651480566555416">
+                    <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="168565768238034">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="889303715800582" speed="5">
+                    <frame duration="1" hotspotX="0.527311" hotspotY="0.484785" original-source="C:\Users\Jana\OneDrive\Pictures\csp files\INTROGD FINALS\005NPC INTERACT\POLICE DEFAULT FRONT.png">
+                        <collision-poly>
+                            <point x="0.0546218" y="0.196222" />
+                            <point x="0.527311" y="0.00419727" />
+                            <point x="0.934874" y="0.228751" />
+                            <point x="0.762605" y="0.484785" />
+                            <point x="0.987395" y="0.767051" />
+                            <point x="0.527311" y="0.991605" />
+                            <point x="0.0441176" y="0.778594" />
+                            <point x="0.235294" y="0.484785" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="shelf" sid="445872598379564">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="792249207318441">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="318833351906911" speed="5">
+                    <frame duration="1" hotspotX="0.509165" hotspotY="0.486381" original-source="D:\Users\Jana\Downloads\Shelf_closed.png">
+                        <collision-poly>
+                            <point x="0.00135777" y="0.0609598" />
+                            <point x="0.509165" y="0.00129702" />
+                            <point x="0.998642" y="0.0959793" />
+                            <point x="0.998642" y="0.876783" />
+                            <point x="0.509165" y="0.998703" />
+                            <point x="0.00135777" y="0.911803" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tableB" sid="263016437253364">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="489308253208526">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="338061094271070" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.470718" original-source="D:\Users\Jana\Downloads\Shelf_open.png">
+                        <collision-poly>
+                            <point x="0.0472103" y="0.00220994" />
+                            <point x="0.5" y="0.0574586" />
+                            <point x="0.95279" y="0.00220994" />
+                            <point x="0.994635" y="0.470718" />
+                            <point x="0.980687" y="0.996685" />
+                            <point x="0.5" y="0.907182" />
+                            <point x="0.0193133" y="0.996685" />
+                            <point x="0.00536481" y="0.470718" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="boundary" sid="961618488889859">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="708034403801520">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="517350180726968" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="dialoguefilter" sid="407558484694301">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Multiply">
+                    <effect id="multiply" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="310513330614125" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="anita_splash" sid="109833453046796">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="479175507078964" speed="5">
+                    <frame duration="1" hotspotX="0.522034" hotspotY="0.462069" original-source="C:\Users\Jana\OneDrive\Pictures\csp files\INTROGD FINALS\001 ANITA\001 STORY\Anita Caught.png">
+                        <collision-poly>
+                            <point x="0.144068" y="0.128736" />
+                            <point x="0.522034" y="0.0126437" />
+                            <point x="0.867797" y="0.151724" />
+                            <point x="0.79322" y="0.462069" />
+                            <point x="0.974576" y="0.844828" />
+                            <point x="0.522034" y="0.990805" />
+                            <point x="0.0694915" y="0.845977" />
+                            <point x="0.19661" y="0.462069" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Anita&apos;s Office L.xml</layout>
+        <layout>Autospy Outside Room L.xml</layout>
+        <layout>Autospy Room L.xml</layout>
+        <layout>Roshi Living Room L.xml</layout>
+        <layout>Roshi Music Room L.xml</layout>
+        <layout>Police Station L.xml</layout>
+        <layout>Roshi Mansion Hall L.xml</layout>
+        <layout>Mafia Lair L.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Annita&apos;s Office ES.xml</event-sheet>
+        <event-sheet>Rosh Mansion Hall ES.xml</event-sheet>
+        <event-sheet>Living Room ES.xml</event-sheet>
+        <event-sheet>Music Room ES.xml</event-sheet>
+        <event-sheet>Police Station ES.xml</event-sheet>
+        <event-sheet>Autospy Room ES.xml</event-sheet>
+        <event-sheet>Autospy Outside Room ES.xml</event-sheet>
+        <event-sheet>Mafia Lair ES.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="14" />
+        <global-instance type="Mouse" uid="17" />
+        <global-instance type="Audio" uid="81">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder>
+        <file name="Lesley Gore - YOU DON&apos;T OWN ME (Piano Cover) (mp3cut.net) (1).m4a" />
+        <file name="Lesley Gore - YOU DON&apos;T OWN ME (Piano Cover) (mp3cut.net) (1).ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
