@@ -15,6 +15,6 @@ Now, she’s plunged into another whirlwind of strange clues, hidden motives, an
 
 How To Play (Controls)
 ---------
-W, A, S, D keys: Use these to move Anita Clue around the urban city in the 1960's full of mystery and for looking clues that will help you along the way as you play. Once you are near an interactable object or person.
+W, A, S, D keys: Use these to move Anita Clue around New York in the 1960's full of mystery and for looking clues that will help you along the way as you play. Once you are near an interactable object or person.
 
 Left Mouse Click: Use to interact with objects that will help the story flow and mysterious interactions with other people that are either suspicious or freindly.
