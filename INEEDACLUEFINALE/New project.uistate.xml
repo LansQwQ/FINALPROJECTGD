@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="1">Roshi Living Room L</layout>
+        <layout order="2">Lab Room L</layout>
+        <layout order="4">Mafia Lair L</layout>
+        <layout order="6">Roshi Mansion Hall L</layout>
+        <layout order="8">Autospy Room L</layout>
+        <layout order="9">Autopsy Outsideroom L</layout>
+        <layout order="11">Roshi Music Room L</layout>
+        <layout order="14">Main menu</layout>
+        <layout order="15">Lose screen</layout>
+        <layout order="16">Prologue</layout>
+        <layout order="17">Epilogue </layout>
+        <layout order="19">instructions</layout>
+        <layout order="20">credits</layout>
+        <event-sheet order="0">Living Room ES</event-sheet>
+        <event-sheet order="3">Autospy Room ES</event-sheet>
+        <event-sheet order="5">Mafia Lair ES</event-sheet>
+        <event-sheet order="7">Rosh Mansion Hall ES</event-sheet>
+        <event-sheet order="10">Autopsy outsideroom ES</event-sheet>
+        <event-sheet order="12">Roshi Music Room Es</event-sheet>
+        <event-sheet order="13">Lab Room Es</event-sheet>
+        <event-sheet order="18">mm</event-sheet>
+        <event-sheet order="21">credits</event-sheet>
+        <event-sheet order="22">epilouge</event-sheet>
+        <event-sheet order="23">lose screen</event-sheet>
+        <event-sheet active="1" order="24">Event sheet 3</event-sheet>
+        <event-sheet order="25">instructions</event-sheet>
+        <event-sheet order="26">Police Station ES</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="0" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="1" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/phone/" />
+        <folder expanded="1" path="animation-folder/newspapers/" />
+        <folder expanded="1" path="animation-folder/anita/" />
+        <folder expanded="1" path="animation-folder/anitadooroffice/" />
+        <folder expanded="1" path="animation-folder/table/" />
+        <folder expanded="1" path="animation-folder/file/" />
+        <folder expanded="1" path="animation-folder/dialougeBox/" />
+        <folder expanded="1" path="animation-folder/invisiblewall/" />
+        <folder expanded="1" path="animation-folder/mansionwall/" />
+        <folder expanded="1" path="animation-folder/couch/" />
+        <folder expanded="1" path="animation-folder/chimney/" />
+        <folder expanded="1" path="animation-folder/portrait/" />
+        <folder expanded="1" path="animation-folder/gramophone/" />
+        <folder expanded="1" path="animation-folder/mansiondoor/" />
+        <folder expanded="1" path="animation-folder/rug/" />
+        <folder expanded="1" path="animation-folder/houseplant/" />
+        <folder expanded="1" path="animation-folder/housekeeper_npc/" />
+        <folder expanded="1" path="animation-folder/inventoryCase/" />
+        <folder expanded="1" path="animation-folder/inventoryframes/" />
+        <folder expanded="1" path="animation-folder/inventoryframes2/" />
+        <folder expanded="1" path="animation-folder/inventoryframes3/" />
+        <folder expanded="1" path="animation-folder/table2/" />
+        <folder expanded="1" path="animation-folder/leaveMarker/" />
+        <folder expanded="1" path="animation-folder/leaveMarker2/" />
+        <folder expanded="1" path="animation-folder/lock/" />
+        <folder expanded="1" path="animation-folder/staff/" />
+        <folder expanded="1" path="animation-folder/gclef/" />
+        <folder expanded="1" path="animation-folder/musicnotes/" />
+        <folder expanded="1" path="animation-folder/musicnotes2/" />
+        <folder expanded="1" path="animation-folder/musicnotes3/" />
+        <folder expanded="1" path="animation-folder/piano/" />
+        <folder expanded="1" path="animation-folder/musicNoteClueSprite/" />
+        <folder expanded="1" path="animation-folder/pressureplates/" />
+        <folder expanded="1" path="animation-folder/pressureplates2/" />
+        <folder expanded="1" path="animation-folder/pressureplates3/" />
+        <folder expanded="1" path="animation-folder/Police1Wall_spr/" />
+        <folder expanded="1" path="animation-folder/Police2Wall_spr/" />
+        <folder expanded="1" path="animation-folder/PoliceDoor_spr/" />
+        <folder expanded="1" path="animation-folder/PoliceTable_spr/" />
+        <folder expanded="1" path="animation-folder/Police1Wall_spr2/" />
+        <folder expanded="1" path="animation-folder/ConspiracyBoard_spr/" />
+        <folder expanded="1" path="animation-folder/PoliceChair_spr/" />
+        <folder expanded="1" path="animation-folder/AutospyBed_spr/" />
+        <folder expanded="1" path="animation-folder/PoliceFriendly_spr/" />
+        <folder expanded="1" path="animation-folder/filter/" />
+        <folder expanded="1" path="animation-folder/filter2/" />
+        <folder expanded="1" path="animation-folder/MafiaGoon_Sprite/" />
+        <folder expanded="1" path="animation-folder/solidwall_spr/" />
+        <folder expanded="1" path="animation-folder/filter1/" />
+        <folder expanded="1" path="animation-folder/wallCrash/" />
+        <folder expanded="1" path="animation-folder/Tallshelf_Beaker/" />
+        <folder expanded="1" path="animation-folder/tallshelf_flowers/" />
+        <folder expanded="1" path="animation-folder/Tallshelf_empty/" />
+        <folder expanded="1" path="animation-folder/Tallshelf_empty2/" />
+        <folder expanded="1" path="animation-folder/Tallshelf_Beaker2/" />
+        <folder expanded="1" path="animation-folder/Tallshelf_closed/" />
+        <folder expanded="1" path="animation-folder/Tallshelf_empty3/" />
+        <folder expanded="1" path="animation-folder/Tallshelf_Beaker3/" />
+        <folder expanded="1" path="animation-folder/tableA/" />
+        <folder expanded="1" path="animation-folder/door/" />
+        <folder expanded="1" path="animation-folder/EnemyPolice_spr/" />
+        <folder expanded="1" path="animation-folder/shelf/" />
+        <folder expanded="1" path="animation-folder/tableB/" />
+        <folder expanded="1" path="animation-folder/boundary/" />
+        <folder expanded="1" path="animation-folder/dialoguefilter/" />
+        <folder expanded="1" path="animation-folder/anita_splash/" />
+        <folder expanded="1" path="animation-folder/boundary_office/" />
+        <folder expanded="1" path="animation-folder/filter_mansion/" />
+        <folder expanded="1" path="animation-folder/anitasplash_Mansion/" />
+        <folder expanded="1" path="animation-folder/avatarMaid/" />
+        <folder expanded="1" path="animation-folder/autopsyBoundary/" />
+        <folder expanded="1" path="animation-folder/PoliceFriendly_spr2/" />
+        <folder expanded="1" path="animation-folder/officeFilter/" />
+        <folder expanded="1" path="animation-folder/anita_splashOffice/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/microphone/" />
+        <folder expanded="1" path="animation-folder/diarypage/" />
+        <folder expanded="1" path="animation-folder/diarypage3/" />
+        <folder expanded="1" path="animation-folder/safeLock/" />
+        <folder expanded="1" path="animation-folder/largeBookcase/" />
+        <folder expanded="1" path="animation-folder/Tallshelfclosed/" />
+        <folder expanded="1" path="animation-folder/Cutscne2/" />
+        <folder expanded="1" path="animation-folder/cutscenekidnap/" />
+        <folder expanded="1" path="animation-folder/aurorasplash/" />
+        <folder expanded="1" path="animation-folder/wynetta/" />
+        <folder expanded="1" path="animation-folder/roshi/" />
+        <folder expanded="1" path="animation-folder/Credits_spr/" />
+        <folder expanded="1" path="animation-folder/Instructions_spr/" />
+        <folder expanded="1" path="animation-folder/Play_spr/" />
+        <folder expanded="1" path="animation-folder/lpbg_spr/" />
+    </folders-expanded>
+</c2uistate>
